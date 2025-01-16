@@ -22,6 +22,13 @@ let stringSomeNumber = String(someNumber);
 console.log(stringSomeNumber);
 console.log(typeof(stringSomeNumber));
 
+// *****************Operations***********************
+
+let value = 3
+let netValue = -value;
+console.log(netValue);
+
+
 
 
 
