@@ -37,6 +37,8 @@ console.log(date.includes("123"));
 
 
     console.log(date.split("/"));
+
+
     
 
 
