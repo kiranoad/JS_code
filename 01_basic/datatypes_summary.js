@@ -69,3 +69,24 @@ myFunction();
 
 
 
+
+// -----------------memory used ---------------
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myKiranName = "kiran is good boy";
+let amotherName = myKiranName;
+amotherName = "hello";
+console.log(amotherName);
+
+
+
+let userOne = {
+   email : "kiran@gmail.com",
+   userId : "user@ybl"
+}
+let userTwo = userOne;
+userTwo.email = "kuamr@gmail.com";
+
+console.log(userOne);
+console.log(userTwo);
+
