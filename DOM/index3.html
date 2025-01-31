@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM with code</title>
+</head>
+<body style="background-color: #040820; color: #FFF;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguage (langName){
+        const li = document.createElement("li");
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    addLanguage("Python")
+    addLanguage("TypeScript")
+
+
+    function addOptLan(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+
+        document.querySelector('.language').appendChild(li)
+    
+    }
+    addOptLan('GoLang');
+
+    function addOtherLang(langName) {
+       const li = document.createElement('li');
+       const addNewC = document.createTextNode(langName);
+       li.appendChild(addNewC);
+
+       document.querySelector('.language').appendChild(li);  
+        
+    }
+    // addOtherLang('Java');
+    // const loopC = addOtherLang.forEach(element => {
+    
+    // });
+
+    // Edit or Changing value of element of htmls with help of JavaScript 
+    const otherOpestion = document.querySelector("li:nth-child(2)")
+    // otherOpestion.innerHTML = "Mojo";
+
+    // or
+
+    const newOps = document.createElement('li')
+    newOps.textContent = "Mojo";
+    otherOpestion.replaceWith(newOps);
+
+    // edit 
+    const secondLang = document.querySelector("li:first-child")
+    secondLang.outerHTML = '<li>C++</li>';
+
+
+    // remove operation
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove();
+
+
+</script>
+</html>
