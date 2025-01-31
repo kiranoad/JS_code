@@ -25,7 +25,7 @@ const str = "hello my name is Kiran Kumar Oad and I leave in baitada";
 
 const obj ={}
 for(let x of str){
-if{obj[x] {
+if(obj[x]){
 obj[x] += 1;
 }else {
 obj[x] = 1;
