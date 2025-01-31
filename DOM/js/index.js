@@ -17,7 +17,7 @@
 
 const dayOne = document.querySelector('.day');
 console.log(dayOne);
-console.log(dayOne.parentElement);
+// console.log(dayOne.parentElement);
 // console.log(dayOne.nextElementSibling);
 
 
