@@ -2,6 +2,7 @@ Project related to DOM
 
 Solution code
 project 1
+
 ```javascript 
     const buttons = document.querySelectorAll('.button');
 // console.log(buttons);
@@ -28,4 +29,4 @@ buttons.forEach(function(button){
     })
 });
 
-        ```
+        
