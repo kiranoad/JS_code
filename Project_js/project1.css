@@ -1,0 +1,35 @@
+.convas{
+    text-align: center;
+}
+/* span{
+    height: 100px;
+    width: 100px;
+} */
+ .button{
+    height: 75px;
+    width: 100px;
+    /* transition: 0.3 ease; */
+ }
+ #grey{
+    background-color: grey;
+ }
+ #white{
+    background-color: white;
+ }
+ #blue{
+    background-color: blue;
+ }
+ #yellow{
+    background-color: yellow;
+ }
+ /* .button:hover{
+    /* height: 70px;
+    width: 90px;
+    transition: 0.3 ease; */
+    /* background-color: rgb(173, 166, 166);
+ } */ 
+ 
+ /* .button:hover > :not(:hover){
+    filter: blur(5px);
+    opacity: 0.5;
+ } */
