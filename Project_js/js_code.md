@@ -34,7 +34,7 @@ buttons.forEach(function(button){
 
 project2
 
-  ```javascrpit
+  ```javascript
 
   const form = document.querySelector('#form').addEventListener("submit" , function(e){
     e.preventDefault()
