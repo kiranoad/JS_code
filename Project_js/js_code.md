@@ -28,9 +28,12 @@ buttons.forEach(function(button){
         }
     })
 });
-       ```
+       
+       
+```
 
-#project 2
+project2
+
   ```javascrpit
 
   const form = document.querySelector('#form').addEventListener("submit" , function(e){
