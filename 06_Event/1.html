@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html ko event</title>
+</head>
+<body>
+    <h1 id="h1">Kiran</h1>
+    <a href="http://google.com" id="google">google</a>
+    <div>
+        <ul id="images">
+            <li></li>
+        </ul>
+    </div>
+    
+
+
+    <script>
+        // tpye, timestamp, defultPrevented 
+        // target, toElement, srcElement,currnentTarget 
+        // clientX, clientY, screenX, screenY
+        //altkey, ctrlkey, shiftkey, keyCode
+
+
+        // document.getElementById('h1').onclick = function(){
+        //     alert('h1');
+        // }
+
+        document.getElementById('h1').addEventListener('click',function(e){
+            console.log(e);
+            
+        })
+
+        document.getElementById('h1').addEventListener('click',function(e){
+            console.log("hello hi I am kiran");
+            e.stopPropagation()
+            
+        }, false) 
+
+        document.getElementById('google').addEventListener('click', function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('google clicked');
+            
+        })
+
+
+       
+
+        
+
+
+    </script>
+</body>
+</html>
