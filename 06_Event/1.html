@@ -9,8 +9,12 @@
     <h1 id="h1">Kiran</h1>
     <a href="http://google.com" id="google">google</a>
     <div>
-        <ul id="images">
-            <li></li>
+        <ul id="images" style="text-decoration: none;">
+            <li><h1 id="kiran1">Kiran1</h1></li>
+            <li><h1 id="kiran2">Kiran2</h1></li>
+            <li><h1 id="kiran3">Kiran3</h1></li>
+            <li><h1 id="kiran4">Kiran4</h1></li>
+            <li><h1 id="kiran5">Kiran5</h1></li>
         </ul>
     </div>
     
@@ -27,22 +31,38 @@
         //     alert('h1');
         // }
 
-        document.getElementById('h1').addEventListener('click',function(e){
-            console.log(e);
+        // document.getElementById('h1').addEventListener('click',function(e){
+        //     console.log(e);
             
-        })
+        // })
 
-        document.getElementById('h1').addEventListener('click',function(e){
-            console.log("hello hi I am kiran");
-            e.stopPropagation()
+        // document.getElementById('h1').addEventListener('click',function(e){
+        //     console.log("hello hi I am kiran");
+        //     e.stopPropagation()
             
-        }, false) 
+        // }, false) 
 
-        document.getElementById('google').addEventListener('click', function(e){
-            e.preventDefault();
-            e.stopPropagation();
-            console.log('google clicked');
+        // document.getElementById('google').addEventListener('click', function(e){
+        //     e.preventDefault();
+        //     e.stopPropagation();
+        //     console.log('google clicked');
             
+        // })
+
+
+        // prject work
+
+        document.querySelector("#images").addEventListener('click',function(e){
+            // console.log(e.target.parentNode);
+            console.log(e.target.tagName);
+            if(e.target.tagName === 'h1'){
+                let removeIt = e.target.parentNode;
+                removeIt.remove()
+
+            }
+            
+         
+            // removeIt.parentNode.removeChild(removeIt);
         })
 
 
