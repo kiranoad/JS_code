@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(24, 24, 24); color: aliceblue;">
+    0. Usent client has been created. open() not called yet.
+    1. OPENED open() has been called.
+    2. HEADERS_RECEIVED send() has been callled, and headers and statues are avaible.
+    3. LOADING Downloading; responseText holds partial data. 
+    4. DONE the operations is complete.
+    
+
+    <script>
+
+        const requestUrl ="https://api.github.com/users/kiranOad"
+       const xhr = new XMLHttpRequest();
+       xhr.open('GET',requestUrl);
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText)
+            console.log(data);  
+            console.log(data.name);   
+        }
+    }
+    
+  
+       xhr.send();
+    </script>
+</body>
+
+</html>
